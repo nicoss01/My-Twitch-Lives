@@ -1,0 +1,108 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+body{
+	background:#000;
+	color:#fff;
+	font-family: 'Gugi', cursive;
+}
+#intro{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	color:#fff;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	opacity:0;
+	transition:all 1s;
+}
+#intro.active{
+	opacity:1;
+}
+#intro h1{
+	font-size:5em;
+}
+#intro button{
+	border:1px solid #fff;
+	border-radius:30px;
+	padding:15px 25px;
+	color:#fff;
+	margin:20px;
+	font-size: 2em;
+	background:#000;
+	cursor: pointer;
+	transition: all 0.4s;
+}
+#intro button:hover{
+	box-shadow: 0 0 20px #fff;
+}
+#jeu{
+	opacity:0;
+	transition:1s all;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9;
+}
+#jeu.active{
+	opacity: 1;
+}
+#jeu section{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	line-height: 80px;
+	border-bottom:2px solid #fff;
+	color:#fff;
+	font-size: 2em;
+}
+#jeu section #score1{
+	position:absolute;
+	top:0;
+	left:20px;
+	height: 80px;
+	line-height: 80px;
+}
+#jeu section #score2{
+	position:absolute;
+	top:0;
+	right:20px;
+	height: 80px;
+	line-height: 80px;
+}
+#joueur1{
+	position:fixed;
+	width:15px;
+	height:50px;
+	top:50%;
+	left:50px;
+	margin-top:-25px;
+	background: #fff;
+}
+#joueur2{
+	position:fixed;
+	width:15px;
+	height:50px;
+	top:50%;
+	right:50px;
+	margin-top:-25px;
+	background: #fff;
+}
+#balle{
+	position: fixed;
+	top:82px;
+	left:50%;
+	width:20px;
+	height: 20px;
+	background: #fff;
+	margin-left:-10px;
+}
